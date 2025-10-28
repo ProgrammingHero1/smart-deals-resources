@@ -1,4 +1,4 @@
-# DESHI DEALS
+# SMART DEALS
 
 **A Local Online Marketplace for Buying & Selling with Bids**
 
@@ -6,14 +6,14 @@
 
 ## Overview
 
-**DESHI DEALS** is a community-driven online marketplace where users can:
+**SMART DEALS** is a community-driven online marketplace where users can:
 
-- Post items for sale (`Adds`)
+- Post items for sale (`Products`)
 - Place bids on items (`Bids`)
 - Negotiate prices through bidding
 - Mark items as `sold` or keep them `pending`
 
-> _"Deshi" means local — think of it as your neighborhood OLX or Craigslist with a bidding system._
+> _ — think of it as your neighborhood OLX or Craigslist with a bidding system._
 
 ---
 
@@ -31,7 +31,7 @@
 
 ## Database Collections
 
-### 1. `Adds` Collection (Product Listings)
+### 1. `Products` Collection (Product Listings)
 
 | Field            | Type         | Description                  |
 | ---------------- | ------------ | ---------------------------- |
@@ -59,7 +59,7 @@
 | Field           | Type         | Description             |
 | --------------- | ------------ | ----------------------- |
 | `_id`           | ObjectId     | Unique bid ID           |
-| `product`       | ObjectId     | Reference to `Adds._id` |
+| `product`       | ObjectId     | Reference to `Products._id` |
 | `buyer_image`   | String (URL) | Buyer’s profile pic     |
 | `buyer_name`    | String       | Buyer’s name            |
 | `buyer_contact` | String       | Buyer’s phone           |
@@ -71,16 +71,16 @@
 
 ## API Endpoints
 
-### **Adds Endpoints**
+### **Products Endpoints**
 
 | Method   | Endpoint                       | Description                        |
 | -------- | ------------------------------ | ---------------------------------- |
-| `GET`    | `/adds?email=user@example.com` | Get all ads (or filter by seller)  |
-| `GET`    | `/adds/:id`                    | Get single ad                      |
-| `POST`   | `/adds`                        | Create new ad                      |
-| `PUT`    | `/adds/:id`                    | Update ad                          |
-| `DELETE` | `/adds/:id`                    | Delete ad                          |
-| `PATCH`  | `/adds/status/:text`           | Change status: `sold` or `pending` |
+| `GET`    | `/products?email=user@example.com` | Get all ads (or filter by seller)  |
+| `GET`    | `/products/:id`                    | Get single ad                      |
+| `POST`   | `/products`                        | Create new ad                      |
+| `PUT`    | `/products/:id`                    | Update ad                          |
+| `DELETE` | `/products/:id`                    | Delete ad                          |
+| `PATCH`  | `/products/status/:text`           | Change status: `sold` or `pending` |
 
 ---
 
@@ -103,12 +103,12 @@
 | **Home**         | Show all active ads             |
 | **Register**     | User signup                     |
 | **Login**        | User login                      |
-| **All-Adds**     | Browse all listings             |
-| **My-Adds**      | View & manage your posted items |
+| **All-Products**     | Browse all listings             |
+| **My-Products**      | View & manage your posted items |
 | **My Bids**      | View bids you've placed         |
-| **Adds Details** | View item + place bid           |
-| **Post Adds**    | Create new listing              |
-| **Update Adds**  | Edit your ad                    |
+| **Products Details** | View item + place bid           |
+| **Post Products**    | Create new listing              |
+| **Update Products**  | Edit your ad                    |
 | **Error Page**   | 404 / error handling            |
 
 ---
@@ -117,7 +117,7 @@
 
 ```text
 1. Seller posts: "iPhone 13 - Used - $500-$550"
-   → POST /adds
+   → POST /products
 
 2. Buyer 1 bids $510
    → POST /bids
@@ -127,7 +127,7 @@
 
 4. Seller accepts Buyer 2
    → PATCH /bids/status/{bidId} → "confirmed"
-   → PATCH /adds/status/sold
+   → PATCH /products/status/sold
 
 5. System deletes other bids
    → DELETE /bids/product/{addId}
@@ -139,7 +139,7 @@
 
 ## License
 
-MIT © DESHI DEALS
+MIT © SMART DEALS
 
 ---
 
@@ -148,4 +148,4 @@ MIT © DESHI DEALS
 
 ---
 
-**DESHI DEALS** – _Where every deal feels like home._
+**SMART DEALS** – _Where every deal feels like home._
