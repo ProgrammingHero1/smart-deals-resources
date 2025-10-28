@@ -1,0 +1,122 @@
+[
+  {
+    "_id": "68fdedf43b8bf18e06468947",
+    "no": 1,
+    "name": "Electronics",
+    "slug": "electronics",
+    "icon": "💻",
+    "description": "Buy and sell phones, laptops, cameras, and other electronic gadgets."
+  },
+  {
+    "_id": "68fdedf43b8bf18e06468948",
+    "no": 2,
+    "name": "Vehicles",
+    "slug": "vehicles",
+    "icon": "🚗",
+    "description": "Find cars, bikes, and other vehicles for sale or resale."
+  },
+  {
+    "_id": "68fdedf43b8bf18e06468949",
+    "no": 3,
+    "name": "Home & Living",
+    "slug": "home-living",
+    "icon": "🏠",
+    "description": "Shop furniture, home appliances, kitchen items, and more."
+  },
+  {
+    "_id": "68fdedf43b8bf18e0646894a",
+    "no": 4,
+    "name": "Fashion & Beauty",
+    "slug": "fashion-beauty",
+    "icon": "👗",
+    "description": "Discover clothing, shoes, accessories, and beauty products."
+  },
+  {
+    "_id": "68fdedf43b8bf18e0646894b",
+    "no": 5,
+    "name": "Pets & Animals",
+    "slug": "pets-animals",
+    "icon": "🐾",
+    "description": "Adopt or buy pets and find accessories for your furry friends."
+  },
+  {
+    "_id": "68fdedf43b8bf18e0646894c",
+    "no": 6,
+    "name": "Sports & Hobbies",
+    "slug": "sports-hobbies",
+    "icon": "⚽",
+    "description": "Buy sports gear, musical instruments, and hobby-related items."
+  },
+  {
+    "_id": "68fdedf43b8bf18e0646894d",
+    "no": 7,
+    "name": "Jobs",
+    "slug": "jobs",
+    "icon": "💼",
+    "description": "Search for full-time, part-time, and freelance job opportunities."
+  },
+  {
+    "_id": "68fdedf43b8bf18e0646894e",
+    "no": 8,
+    "name": "Real Estate",
+    "slug": "real-estate",
+    "icon": "🏢",
+    "description": "Explore houses, apartments, and land for sale or rent."
+  },
+  {
+    "_id": "68fdedf43b8bf18e0646894f",
+    "no": 9,
+    "name": "Services",
+    "slug": "services",
+    "icon": "🧰",
+    "description": "Hire skilled workers, repairmen, or professional services."
+  },
+  {
+    "_id": "68fdedf43b8bf18e06468950",
+    "no": 10,
+    "name": "Education",
+    "slug": "education",
+    "icon": "🎓",
+    "description": "Find courses, tutors, and learning materials for all ages."
+  },
+  {
+    "_id": "68fdedf43b8bf18e06468951",
+    "no": 11,
+    "name": "Health & Fitness",
+    "slug": "health-fitness",
+    "icon": "💪",
+    "description": "Buy gym equipment, supplements, and health-related products."
+  },
+  {
+    "_id": "68fdedf43b8bf18e06468952",
+    "no": 12,
+    "name": "Food & Agriculture",
+    "slug": "food-agriculture",
+    "icon": "🌾",
+    "description": "Trade fresh food, crops, and farming tools and machinery."
+  },
+  {
+    "_id": "68fdedf43b8bf18e06468953",
+    "no": 13,
+    "name": "Business & Industry",
+    "slug": "business-industry",
+    "icon": "🏭",
+    "description": "Sell or buy industrial tools, office equipment, and raw materials."
+  },
+  {
+    "_id": "68fdedf43b8bf18e06468954",
+    "no": 14,
+    "name": "Toys & Games",
+    "slug": "toys-games",
+    "icon": "🧸",
+    "description": "Find toys, board games, and collectibles for kids and adults."
+  },
+  {
+    "_id": "68fdedf43b8bf18e06468955",
+    "no": 15,
+    "name": "Others",
+    "slug": "others",
+    "icon": "📦",
+    "description": "Anything else that doesn’t fit in the main categories."
+  }
+]
