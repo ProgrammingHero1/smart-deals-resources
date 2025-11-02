@@ -95,8 +95,13 @@ vercel --prod
 
 7.Add Environment variable: Your project in Vercel > Settings > Environment Variables > add or upload .env file
 8. Whitelisting the ip address or allow from anywhere ( Security > Database & Network Access > IP Access List > Add IP Address
-9. Common issues: 
+9. Common issues Checklist: 
+- in the package.json add a script: `"start": "node index.js"`
+- use `process.env.PORT` for the port you are listenting
 - not adding vercel.json
 - not adding environment variable
+- mongodb user id and password is valid
+- mongodb user has read-write or admin access
 - not whitelisting the ip address or allow all ( Security > Database & Network Access > IP Access List > Add IP Address
+- closing the connection after connecting to mongodb
 # Server Deployment on Vercel  Done
