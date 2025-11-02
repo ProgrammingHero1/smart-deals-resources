@@ -93,8 +93,11 @@ vercel --prod
 
 <img src="https://i.ibb.co.com/dgH40d3/Screenshot-3.jpg"/>
 
-7.Add Environment variable: Your project in Vercel > Settings > Environment Variables > add or upload .env file
+
+7. Add Environment variable: Your project in Vercel > Settings > Environment Variables > add or upload .env file
+
 8. Whitelisting the ip address or allow from anywhere ( Security > Database & Network Access > IP Access List > Add IP Address
+
 9. Common issues Checklist: 
 - in the package.json add a script: `"start": "node index.js"`
 - use `process.env.PORT` for the port you are listenting
@@ -104,4 +107,19 @@ vercel --prod
 - mongodb user has read-write or admin access
 - not whitelisting the ip address or allow all ( Security > Database & Network Access > IP Access List > Add IP Address
 - closing the connection after connecting to mongodb
-# Server Deployment on Vercel  Done
+
+10. If you are using Firebase jwt token verification  on the server, convert the service key from utf8 to base64 string: 
+```
+const fs = require("fs");
+const key = fs.readFileSync("./firebase-admin-key.json", "utf8");
+const base64 = Buffer.from(key).toString("base64");
+console.log(base64);
+```
+Run this file by using: `node ` your file name
+
+11. Now get the key from base64 to utf8
+```
+const decoded = Buffer.from(process.env.FB_SERVICE_KEY, "base64").toString("utf8");
+const serviceAccount = JSON.parse(decoded);
+```
+
