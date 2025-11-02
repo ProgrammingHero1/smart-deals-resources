@@ -93,7 +93,9 @@ vercel --prod
 
 <img src="https://i.ibb.co.com/dgH40d3/Screenshot-3.jpg"/>
 
-7. Common issues: 
+7.Add Environment variable: Your project in Vercel > Settings > Environment Variables > add or upload .env file
+8. Whitelisting the ip address or allow from anywhere ( Security > Database & Network Access > IP Access List > Add IP Address
+9. Common issues: 
 - not adding vercel.json
 - not adding environment variable
 - not whitelisting the ip address or allow all ( Security > Database & Network Access > IP Access List > Add IP Address
