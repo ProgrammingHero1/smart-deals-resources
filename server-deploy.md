@@ -93,4 +93,8 @@ vercel --prod
 
 <img src="https://i.ibb.co.com/dgH40d3/Screenshot-3.jpg"/>
 
+7. Common issues: 
+- not adding vercel.json
+- not adding environment variable
+- not whitelisting the ip address or allow all ( Security > Database & Network Access > IP Access List > Add IP Address
 # Server Deployment on Vercel  Done
