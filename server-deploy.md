@@ -33,15 +33,17 @@ await client.db("admin").command({ ping: 1 });
 ### For Firebase Token Verification
 4-a . If you are using Firebase jwt token verification  on the server, convert the service key from utf8 to base64 string: 
 ```
+// encode.js
 const fs = require("fs");
 const key = fs.readFileSync("./firebase-admin-key.json", "utf8");
 const base64 = Buffer.from(key).toString("base64");
 console.log(base64);
 ```
-Run this file by using: `node ` your file name
+Run this file by using: `node encode.js` your file name
 
 4-b. Now get the key from base64 to utf8
 ```
+// index.js
 const decoded = Buffer.from(process.env.FB_SERVICE_KEY, "base64").toString("utf8");
 const serviceAccount = JSON.parse(decoded);
 ```
